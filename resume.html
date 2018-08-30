@@ -1,0 +1,483 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+
+  body {
+    padding: 10px;
+    text-align: center;
+    //font-family: monaco, monospace;
+    margin:10px;
+    height: 900px;
+    background:#BBDEFB
+  }
+
+  #resume_body_full{
+    display:flex;
+    background:green;
+    width:100%;
+    height:100%;
+    position:relative;
+    justify-content:space-around;
+    color:#BBDEFB;
+    height:800px;;
+
+  }
+
+  #resume_main_section{
+    position:absolute;
+    left:25%;
+    background:blue;
+    height:100%;
+    width:75%;
+
+  }
+
+  #resume_content{
+    position:absolute;
+    background:#64B5F6;
+    height:125.25%;
+    width:100%;
+    //border:2px solid red;
+  }
+
+  #sidebar{
+    position:absolute;
+    background:#42A5F5 ;
+    left:0px;
+    width:25%;
+    height:125.25%;
+    min-width:150px;
+
+
+  }
+
+  #pic{
+    position:absolute;
+    display:flex;
+    min-width:100px;
+    height:100px;
+    right:35px;
+    left:10px;
+    top:10px;
+
+  }
+  img{
+   border:2px dashed white ;
+   margin-right:auto;
+   margin-left:auto;
+   border-radius:50%;
+ }
+ #applicant_name{
+  display:flex;
+  position:absolute;
+  width:100%;
+  height:170px;
+  // border:1px solid red;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  
+  
+}
+#applicant_name  p{
+ position:absolute;
+ top:110px;
+ text-align:center;
+ width:100%;
+ //border:2px solid green;
+ font-size:25px;
+ font-family:cursive;
+ color:white;
+ margin-top:-4px;
+
+}
+#skillset{
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:100%;
+  height:65%;
+  //border:2px solid transparent;
+  top:170px;
+  
+}
+.skillsetbox{
+
+  background:#0D47A1;
+  opacity:1;
+  width:94%;
+  height:auto;
+  margin:10px auto;
+  border:1px solid transparent;
+  border-radius:2px;
+  box-shadow:2px 2px 2px 2px  grey;
+  font-style:italic;
+  font-weight: bold;
+
+
+}
+.skillsetbox p{
+  
+  font-size:24px;
+}
+.rating{
+  width:80%;
+  height:0px;
+  border:3px solid white;
+  margin-left:16px;
+  margin-top:-12px;
+
+
+}
+
+
+
+
+.info_section{
+  position:relative;
+  width:98%;
+  background:#64B5F6;;
+  height:auto;
+  flex-direction:column;
+  display:flex;
+  align-items:start;
+  margin-top:5px;
+  color:black;
+  justify-content:flex-start;
+
+  padding-left:2%;
+  padding-bottom:10px;
+  opacity:0.8;
+} 
+.text_styling{
+
+  //border:2px solid red;
+  font-size:24px;
+  padding:2px;
+  margin:-9px;
+  color:black;
+  font-weight:bold;
+
+}
+.section_heading{
+  color:darkblack;
+  font-size:24px;
+  //border:2px solid red;
+  padding:5px;
+  margin-left:auto;
+  margin-right:auto;
+  font-weight:bold;
+  margin-top:2px;
+  border:3px solid transparent;
+  border-radius:15px;
+  background:#42a5f5;
+  color:white;
+  box-shadow: 3px 3px  3px #283593;
+
+
+}
+.qualification_table{
+
+  position:relative;
+  width:98%;
+  height:80px;
+  background:#e3f2fd ;
+  margin-right:3px;
+  font-size:24px;
+  color:black;
+
+
+}
+th,tr{
+  /*color:blue;*/
+  text-align:center;
+}
+.pwithinproject{
+  margin-top:-8px;
+  color:black;
+  font-size: 24px;
+
+
+
+}
+.pwithinproject:before{
+ content:"\25AA";
+ color:white;
+ font-size: 32px;
+ margin-right:8px;
+
+} 
+.text_styling a{
+ text-decoration:none;
+ color:purple;
+}
+#page_header{
+ height:60px;
+ display:flex;
+ flex-direction:row;
+ background:transparent;
+ width:100%;
+ justify-content:flex-end;
+ align-items:center;
+ flex-wrap:wrap;
+}
+
+.github{
+ width:32px;
+ font-size:36px;
+ margin-right:30px;
+ background:#212121;
+ color:white;
+ border-radius:8px;
+ padding:4px;
+ box-shadow:2px 2px purple;
+}
+
+.github:hover{
+ background:#01579b ;
+ box-shadow:1px 1px purple;
+}
+
+#footer{
+
+ // margin-left:-20px;
+ // margin-right:-20px;
+ margin-bottom:32px;
+ margin-top:80px;
+ width:100%;
+ height:300px;
+ // border:2px solid green;
+ position:relative;
+ top:200px;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-around;
+ background:transparent;
+
+}
+.footer_box{
+
+ height:100%;
+ flex-basis:600px;
+ //background:black;
+
+ opacity:0.9;
+ border-radius:8px;
+ box-shadow: 3px 3px blue;
+}
+
+
+.box_left{
+ display:flex;
+ background:black;//#3b3b3b;
+ opacity:0.8;
+ color:white;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ font-size:35px;
+ font-weight:bold;
+ font-style: italic;
+ position: relative;
+
+}
+.box_right{
+ background:#1e88e5 ;
+ opacity:0.8
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.box_right input{
+  display: block;
+  margin-top:5%;
+  margin-left:auto;
+  margin-right: auto;
+  width:80%;
+  height: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+.box_right button{
+  margin-top: 20px;
+  border:3px;
+  background: blue;
+  color:white;
+  font-size: 20px;
+  box-shadow: 2px 2px 2px 2px white;
+  border-radius: 5px;
+}
+.box_left div a  i{ 
+
+  position: absolute;
+  color:white;
+  opacity:1
+}
+.box_left div a  i:hover{
+ 
+ color: skyblue;
+ 
+}
+</style>
+<body>
+  <div id="page_header">
+   <div class="github"><i class="fa fa-github"></i></div>
+   <div class="github"><i class="fa fa-facebook"></i></div>
+   <div class="github"><i class="fa fa-linkedin"></i></div>
+ </div>
+ <h1>Resume</h1>
+ <div id="resume_body_full">
+
+  <div id="resume_main_section">
+
+    <div id="resume_content">
+      <div class="info_section">
+        <p class="section_heading">personal</p>
+        <p class="text_styling">Email:<a href="">pradeepkmr838@gmail.com</a></p></br>
+        <p class="text_styling">Email:<a href="">Linkdien</a></p></br>
+        <p class="text_styling">contact:9891494996</p>
+      </div>
+
+      <div class="info_section">
+       <p class="section_heading">Qualification</p>
+       <table class="qualification_table" border="2">
+         <tr>
+           <th>no</th>
+           <th>course</th>
+           <th>institution name</th>
+           <th>percentage</th>
+         </tr>
+         <tr>
+           <td>1.</td>
+           <td>B-tech(CSE)</td>
+           <td>AIACTR</td>
+           <td>85%</td>
+
+         </tr>
+         <tr>
+           <td>2.</td>
+           <td>XII</td>
+           <td>RPVV</td>
+           <td>89.1%</td>
+
+         </tr>
+         <tr>
+           <td>3</td>
+           <td>X</td>
+           <td>GBSSS,Padam Nagar</td>
+           <td>95%</td>
+
+         </tr>
+       </table>
+
+
+     </div>
+
+     <div class="info_section">
+       <p class="section_heading">project Accomplished</p>
+
+       <p class="pwithinproject">card genrator using Ajax and javascript</p>
+       <p class="pwithinproject">Designed and Devloped website</p>
+       <p class="pwithinproject">Word sense disambiguation using Fuzzy logic</p>
+       <p class="pwithinproject">Build a media player using java </p>
+     
+
+     </div>
+
+     <div class="info_section">
+       <p class="section_heading">Hobbies</p>
+        <p class="pwithinproject">Solving puzzle and mathematics problem</p>
+       <p class="pwithinproject">Listening Music </p>
+       <p class="pwithinproject">Reading books</p>
+       <p class="pwithinproject">creative writting</p>
+       
+     </div>
+
+
+
+   </div>
+
+ </div>
+
+ <div id="sidebar">
+
+
+   <div id='applicant_name'>
+     <img src="pradeep.jpg" id="pic">
+   </img>
+   <p>
+    Pradeep kumar<br>[Software Engineer]
+  </p>
+
+</div>
+
+<div id="skillset">
+ <div class="skillsetbox">
+   <p>java</p>
+   <p class="rating"></p>
+
+
+ </div>
+ <div class="skillsetbox">
+
+  <p>javascript</p>
+  <p class="rating"></p>
+
+</div>
+<div class="skillsetbox">
+ <p>Php</p>
+ <p class="rating"></p>
+
+</div>
+<div class="skillsetbox">
+
+  <p>CSS & HTML</p>
+  <p class="rating"></p>
+
+</div>
+<div class="skillsetbox">
+
+  <p>Python</p>
+  <p class="rating"></p>
+
+</div>
+<div class="skillsetbox">
+
+  <p>MySql</p>
+  <p class="rating"></p>
+
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+<div id="footer">
+
+  <div class="footer_box box_left">
+    <p>Love to hear from you</p>
+    <div><a href="#sidebar"><i class="fa fa-arrow-circle-up"></i></a></div>
+
+  </div>
+  <div class="footer_box box_right">
+
+   <form>
+     <input type="text" name="" placeholder="your name">
+     <input type="text" name="" placeholder="contact">
+     <input type="text" name="" placeholder="message">
+      <button type="submit">submit</button>
+   </form>
+
+
+  </div>
+
+
+</div>
+
+
+</body>
